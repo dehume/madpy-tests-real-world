@@ -1,0 +1,17 @@
+[project]
+name = "real-world-testing"
+version = "0.1.0"
+description = "MadPy Real World Testing"
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+dependencies = [
+    "requests",
+    "sqlalchemy",
+    "psycopg2-binary"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff"
+]
