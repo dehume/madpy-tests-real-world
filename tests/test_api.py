@@ -12,6 +12,11 @@ def mock_cat_api_response_data():
         return json.load(data)
 
 
+# Blocked by conftest.py
+# def test_get_cat_facts_network():
+#     result = get_cat_facts()
+
+
 @patch("requests.get")
 def test_get_cat_facts(mock_get, mock_cat_api_response_data):
     # Mock response data
